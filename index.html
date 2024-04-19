@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ff00ff">
+    <meta name="msapplication-TileImage" content="./icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#bfa9b1">
+    <link rel="manifest" href="/manifest.json">
+    <script src="./main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Marmelad&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header_wrapper wrapper">
+            <nav class="left_nav">
+                <div class="logo_wrapper">
+                    <a href="#section1"><img alt="Главная" src="./icons/android-icon-192x192.png"></a>
+                    <a href="#section2" class="logo_title">Здание</a>
+                </div>
+                <ul class="navbar_list navbar_list_desk">
+                    <li><a href="#section1">Главная</a></li>
+                    <li><a href="#section2">Видео</a></li>
+                    <li><a href="#!">Преимущества</a></li>
+                    <li><a href="#!">Фото</a></li>
+                    <li><a href="#!">Адрес объекта</a></li> 
+                </ul>
+
+                <div class="mobile_top_menu">
+                    <button class="icon_menu" type="button"><span></span></button>
+                    <nav class="mobile_menu_body" style="visibility: hidden;">
+                        <ul class="navbar_list navbar_list_mobile">
+                            <li><a href="#section1">Главная</a></li>
+                            <li><a href="#section2">Видео</a></li>
+                            <li><a href="#!">Преимущества</a></li>
+                            <li><a href="#!">Фото</a></li>
+                            <li><a href="#!">Адрес объекта</a></li> 
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+
+            <address>
+                <div class="contact_top_text">Связаться с нами</div>
+                <div class="contact_bottom_icons">
+                    <a href="tel::88005553535"><img src="./icons/android-icon-36x36.png" alt="telephone"></a>
+                    <a href="#!"><img src="./icons/android-icon-36x36.png" alt="social"></a>
+                    <a href="#!"><img src="./icons/android-icon-36x36.png" alt="social"></a>
+                    <a href="#!"><img src="./icons/android-icon-36x36.png" alt="social"></a>
+                </div>
+            </address>
+        </div>
+    </header>
+    <section id="section1">
+        <p style="font-size: 48px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, debitis harum recusandae nihil voluptas provident saepe quod fugiat rerum porro modi ipsam atque, ad eaque eum sint suscipit aperiam perspiciatis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, debitis harum recusandae nihil voluptas provident saepe quod fugiat rerum porro modi ipsam atque, ad eaque eum sint suscipit aperiam perspiciatis?
+        </p>
+    </section>
+    <section id="section2">
+        <p style="font-size: 48px; word-wrap: break-word;">
+            аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа
+            аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа
+            аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа
+        </p>
+    </section>
+    <!-- <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('./sw.js')
+                .then(function (registration) {
+                    console.log('Service Worker registered with scope:', registration.scope)
+                })
+                .catch(function (error) {
+                    console.log('Service Worker registration failed:', error)
+                })
+            })
+        }
+    </script> -->
+</body>
+</html>
