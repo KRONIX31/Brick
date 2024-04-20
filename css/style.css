@@ -65,7 +65,7 @@ header::after{
 .left_nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex: 1;
     gap: 40px;
     align-items: center;
@@ -85,6 +85,7 @@ header::after{
     transition: border-color 0.5s, transform 0.25s ease-in;
     border: 3px solid #00000000;
     border-radius: 4px;
+    border-image: linear-gradient(90deg, rgb(107, 62, 62), rgb(74, 44, 124)) 1;
 }
 
 .navbar_list_mobile{
@@ -220,22 +221,31 @@ header::after{
 
 
 .header_wrapper address{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    padding: 3px;
-    border: 2px dashed rgb(255, 255, 255, 0.5);
+    /* padding: 3px; */
 }
-.contact_bottom_icons{
+.header_wrapper address a{
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.356));
+}
+.header_wrapper address a:hover{
+    text-decoration: underline rgb(228, 228, 228);
+}
+.header_wrapper address a img{
+    width: clamp(0.975rem, 1rem + 0.375vw, 1.45rem);
+    height: auto;
+    filter: invert(1);
+}
+/* .contact_bottom_icons{
     display: flex;
     gap: 10px;
 }
 .contact_bottom_icons img{
     width: 36px;
     height: auto;
-}
+} */
 
 
 section{
@@ -243,6 +253,40 @@ section{
     background: rgb(236, 164, 164);
     padding: 10px;
     min-height: 100vh;
+}
+
+
+
+.social_bar{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--header_color);
+}
+.social_bar a{
+    flex: 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}
+.social_bar a img{
+    width: clamp(1.5rem, 1.3047rem + 0.625vw, 2.125rem);
+}
+.social_bar_telegram{
+    background-color: #3ba5de;
+}
+.social_bar_viber{
+    background-color: #75428a;
+}
+.social_bar_whatsapp{
+    background-color: #00c64b;
+}
+.social_bar img{
+    filter: invert(1);
 }
 
 
@@ -258,6 +302,9 @@ section{
     }
 }
 @media (max-width: 880px){
+    .left_nav{
+        justify-content: flex-start;
+    }
     .navbar_list_desk{
         display: none;
     }
