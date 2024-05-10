@@ -76,7 +76,7 @@ header::after{
     position: relative;
     display: flex;
     list-style: none;
-    gap: 19px;
+    gap: 16px;
 }
 .navbar_list_desk{
     flex-direction: row;
@@ -207,7 +207,7 @@ header::after{
     /*visibility: hidden;*/
     transform: rotateX(90deg) translateX(0%);
     transform-origin: 50% 0%;
-    padding: 16px;
+    padding: 15px;
     border-top: 3px dotted #fff;
     width: 100%;
     height: auto;
